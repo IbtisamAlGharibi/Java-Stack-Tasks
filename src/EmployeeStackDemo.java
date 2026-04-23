@@ -10,6 +10,8 @@ public class EmployeeStackDemo {
         employeeAction.push("Write");
         employeeAction.push("Submit");
 
+        System.out.println(employeeAction);
+
 
 
     }
