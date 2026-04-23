@@ -12,5 +12,9 @@ public class EmployeeStackSearch {
 
         System.out.println(employeeAction);
 
+        int find = employeeAction.search("Leave");
+        System.out.println(find);
+
+
     }
 }
