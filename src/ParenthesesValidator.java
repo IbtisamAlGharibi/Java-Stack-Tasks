@@ -9,6 +9,11 @@ public class ParenthesesValidator {
         characters.push("()");
         characters.push("//");
 
+    }
+
+    public static String isBalanced(){
+        Stack<Character>  stack = new Stack<>();
+
 
     }
 }
