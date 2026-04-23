@@ -15,6 +15,8 @@ public class BrowserHistorySimulator {
 
         System.out.println(webPages.peek());
 
+        System.out.println(webPages.isEmpty());
+
 
     }
 }
