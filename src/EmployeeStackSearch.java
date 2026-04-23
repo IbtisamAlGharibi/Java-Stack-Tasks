@@ -20,9 +20,16 @@ public class EmployeeStackSearch {
 
         boolean check = employeeAction.contains("Enter");
         System.out.println(check);
+        System.out.println("--------------------------------------------------------------------");
 
-        for (int i = 0; i <employeeAction.size()-1;i++){
+        for (int i = 0; i <employeeAction.size();i++){
             System.out.println(employeeAction.get(i));
         }
+        System.out.println("--------------------------------------------------------------------");
+
+        for (int i = employeeAction.size() - 1; i >= 0; i--){
+            System.out.println(employeeAction.get(i));
+        }
+
     }
 }
