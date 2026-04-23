@@ -9,7 +9,7 @@ public class BrowserHistorySimulator {
         webPages.push("Slack");
         webPages.push("ClickUp");
 
-
+        System.out.println(webPages);
 
     }
 }
