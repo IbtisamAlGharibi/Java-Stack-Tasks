@@ -20,6 +20,7 @@ public class BrowserHistorySimulator {
         webPages.push("Teams");
         webPages.push("Zoom");
 
+        System.out.println(webPages);
 
 
     }
