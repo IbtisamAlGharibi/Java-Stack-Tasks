@@ -12,6 +12,9 @@ public class EmployeeStackDemo {
 
         System.out.println(employeeAction);
 
+        employeeAction.push("Remove");
+
+
 
 
     }
