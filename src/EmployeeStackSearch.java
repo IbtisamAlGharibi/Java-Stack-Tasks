@@ -10,6 +10,7 @@ public class EmployeeStackSearch {
         employeeAction.push("Submit");
         employeeAction.push("Remove");
 
+        System.out.println(employeeAction);
 
     }
 }
