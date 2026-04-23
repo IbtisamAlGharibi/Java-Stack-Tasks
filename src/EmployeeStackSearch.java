@@ -15,6 +15,9 @@ public class EmployeeStackSearch {
         int find = employeeAction.search("Leave");
         System.out.println(find);
 
+        int find2 = employeeAction.search("Submit");
+        System.out.println(find2);
+
 
     }
 }
