@@ -30,6 +30,11 @@ public class EmployeeStackSearch {
         for (int i = employeeAction.size() - 1; i >= 0; i--){
             System.out.println(employeeAction.get(i));
         }
+        System.out.println("--------------------------------------------------------------------");
+
+        for (int i = 0; i < employeeAction.size(); i++){
+            System.out.println("Index " + i + " : " + employeeAction.get(i));
+        }
 
     }
 }
