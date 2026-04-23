@@ -13,6 +13,8 @@ public class BrowserHistorySimulator {
         System.out.println(webPages.pop());
         System.out.println(webPages.pop());
 
+        System.out.println(webPages.peek());
+
 
     }
 }
