@@ -10,6 +10,9 @@ public class BrowserHistorySimulator {
         webPages.push("ClickUp");
 
         System.out.println(webPages);
+        System.out.println(webPages.pop());
+        System.out.println(webPages.pop());
+
 
     }
 }
