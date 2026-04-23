@@ -18,6 +18,7 @@ public class EmployeeStackSearch {
         int find2 = employeeAction.search("Submit");
         System.out.println(find2);
 
-
+        boolean check = employeeAction.contains("Enter");
+        System.out.println(check);
     }
 }
