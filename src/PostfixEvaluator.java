@@ -13,6 +13,6 @@ public class PostfixEvaluator {
 
     public static Integer evaluatePostfix(String expression){
 
-
+        Stack<Integer> stack = new Stack<>();
     }
 }
