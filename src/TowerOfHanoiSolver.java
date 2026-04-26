@@ -31,7 +31,16 @@ public class TowerOfHanoiSolver {
 
         } else if (fromPeg == 'C' && !C.isEmpty()) {
             disk1 = Integer.parseInt(C.peek());
+        }
 
+        if (toPeg == 'A' && !A.isEmpty()){
+            disk2 = Integer.parseInt(A.peek());
+
+        }else if (toPeg == 'B' && !B.isEmpty()){
+            disk2 = Integer.parseInt(B.peek());
+
+        } else if (toPeg == 'C' && !C.isEmpty()) {
+            disk2 = Integer.parseInt(C.peek());
         }
     }
 }
