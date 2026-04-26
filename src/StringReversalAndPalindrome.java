@@ -14,5 +14,8 @@ public class StringReversalAndPalindrome {
         if (input == null)
             return null;
 
+        Stack<Character> stack = new Stack<>();
+        String reversed = "";
+
     }
 }
