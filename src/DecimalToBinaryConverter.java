@@ -11,4 +11,9 @@ public class DecimalToBinaryConverter {
 
     }
 
+    public static Integer decimalToBinary(int decimal){
+
+
+    }
+
 }
