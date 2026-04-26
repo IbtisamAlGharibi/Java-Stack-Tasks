@@ -9,6 +9,11 @@ public class ParenthesesValidator {
         characters.push("()");
         characters.push("//");
 
+        for (int i = 0 ; i<characters.size();i++){
+            boolean check = isBalanced(characters.get(i));
+            System.out.println(check);
+        }
+
     }
 
     public static Boolean isBalanced(String str){
