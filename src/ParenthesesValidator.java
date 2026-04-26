@@ -11,9 +11,23 @@ public class ParenthesesValidator {
 
     }
 
-    public static String isBalanced(){
+    public static Boolean isBalanced(String str){
         Stack<Character>  stack = new Stack<>();
 
+        for (int i =0; i<stack.size();i++){
 
+           if (str.charAt(i)== '<' && str.charAt(i+1)== '>'|| str.charAt(i)== '(' && str.charAt(i+1)== ')'
+                   || str.charAt(i)== '[' && str.charAt(i+1)== ']' || str.charAt(i)== '{' && str.charAt(i+1)== '}'
+                   || str.charAt(i)== '/' && str.charAt(i+1)== '/'){
+               stack.push(str.charAt(i));
+               stack.push(str.charAt(i+1));
+               System.out.println("True");
+           }
+           return true;
+        }
+        return false;
     }
+
 }
+
+
