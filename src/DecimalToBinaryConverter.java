@@ -27,4 +27,8 @@ public class DecimalToBinaryConverter {
 
     }
 
+    public static void displayConversionProcess(int decimal){
+
+    }
+
 }
