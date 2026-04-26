@@ -28,6 +28,8 @@ public class StringReversalAndPalindrome {
     }
 
     public static boolean isPalindrome(String input){
+        if (input == null)
+            return false;
 
 
     }
