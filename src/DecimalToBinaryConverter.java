@@ -11,7 +11,7 @@ public class DecimalToBinaryConverter {
 
     }
 
-    public static Integer decimalToBinary(int decimal){
+    public static String decimalToBinary(int decimal){
         Stack<Integer> stack = new Stack<>();
         String binary = "";
 
@@ -19,7 +19,11 @@ public class DecimalToBinaryConverter {
             stack.push(decimal % 2);
             decimal = decimal / 2;
         }
+        while (!stack.isEmpty()){
+            binary += stack.pop();
+        }
 
+        return binary;
 
     }
 
