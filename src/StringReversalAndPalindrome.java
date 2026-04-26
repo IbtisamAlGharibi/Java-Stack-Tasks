@@ -21,6 +21,10 @@ public class StringReversalAndPalindrome {
             stack.push(input.charAt(i));
         }
 
+        while (!stack.isEmpty()){
+            reversed += stack.pop();
+        }
+
 
     }
 }
