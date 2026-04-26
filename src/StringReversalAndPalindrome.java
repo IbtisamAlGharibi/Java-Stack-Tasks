@@ -38,7 +38,9 @@ public class StringReversalAndPalindrome {
         }
 
         for (int i = 0; i < input.length(); i++){
-
+            if (input.charAt(i) != stack.pop()){
+                return false;
+            }
         }
 
 
