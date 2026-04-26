@@ -19,6 +19,9 @@ public class HtmlTagValidator {
 
             String[] parts = html.split("<");
 
+            for (int i = 0; i < parts.length; i++){
 
-        }
+                }
+
+            }
 }
