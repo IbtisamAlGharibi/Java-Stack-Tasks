@@ -68,5 +68,7 @@ public class HtmlTagValidator {
         }
 
         return true;
+
+
     }
 }
