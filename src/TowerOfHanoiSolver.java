@@ -7,4 +7,9 @@ public class TowerOfHanoiSolver {
     public static void main(String[] args){
 
     }
+
+    public static void initializePegs(int numDisks){
+
+
+    }
 }
