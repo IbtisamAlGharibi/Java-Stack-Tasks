@@ -11,8 +11,11 @@ public class HtmlTagValidator {
 
     }
 
-    public static String validateHtmlTags(String html){
-
+    public static boolean validateHtmlTags(String html){
+        Stack<String> stack= new Stack<>();
+        if (html == null || html.isEmpty()){
+            System.out.println("Empty string");
+                return false;
 
     }
 }
