@@ -19,6 +19,8 @@ public class StringReversalAndPalindrome {
 
 
     }
+
+
     public static String  reverseString(String input){
         if (input == null)
             return null;
