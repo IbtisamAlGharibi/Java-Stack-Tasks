@@ -9,6 +9,10 @@ public class HtmlTagValidator {
         String str4 = "<p> </p>";
         String str5 = "<header> </header>";
 
+    }
+
+    public static String validateHtmlTags(String html){
+
 
     }
 }
