@@ -36,6 +36,9 @@ public class DecimalToBinaryConverter {
 
             stack.push(remainder);
 
+            System.out.println("quotient"+" "+ quotient +" "+ " remainder " + remainder +" "+ " stack: " + stack);
+
+
         }
     }
 
