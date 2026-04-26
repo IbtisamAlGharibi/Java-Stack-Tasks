@@ -34,6 +34,8 @@ public class DecimalToBinaryConverter {
             int remainder = decimal %2;
             int quotient = decimal / 2;
 
+            stack.push(remainder);
+
         }
     }
 
