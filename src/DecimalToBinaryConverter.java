@@ -31,7 +31,8 @@ public class DecimalToBinaryConverter {
         Stack<Integer> stack = new Stack<>();
 
         while (decimal > 0){
-
+            int remainder = decimal %2;
+            int quotient = decimal / 2;
 
         }
     }
