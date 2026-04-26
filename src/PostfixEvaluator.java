@@ -15,5 +15,9 @@ public class PostfixEvaluator {
 
         Stack<Integer> stack = new Stack<>();
         String[] tokens = expression.split(" ");
+
+        for (int i = 0; i < tokens.length; i++){
+
+            }
     }
 }
