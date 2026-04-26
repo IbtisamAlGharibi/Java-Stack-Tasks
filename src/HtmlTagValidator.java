@@ -20,7 +20,9 @@ public class HtmlTagValidator {
             String[] parts = html.split("<");
 
             for (int i = 0; i < parts.length; i++){
-
+                String part = parts[i];
+                if (!part.contains(">")) continue;
+                String tag = part.substring(0, part.indexOf(">"));
                 }
 
             }
