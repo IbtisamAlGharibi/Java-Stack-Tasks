@@ -16,10 +16,14 @@ public class PostfixEvaluator {
         Stack<Integer> stack = new Stack<>();
         String[] tokens = expression.split(" ");
 
-        for (int i = 0; i < tokens.length; i++){
+        for (int i = 0; i < tokens.length; i++) {
             String token = tokens[i];
 
-
+            if (Character.isDigit(token.charAt(0))) {
+                stack.push(Integer.parseInt(token));
             }
+
+
+        }
     }
 }
