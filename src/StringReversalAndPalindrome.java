@@ -24,7 +24,6 @@ public class StringReversalAndPalindrome {
         while (!stack.isEmpty()){
             reversed += stack.pop();
         }
-
-
+        return reversed;
     }
 }
