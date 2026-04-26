@@ -32,5 +32,9 @@ public class StringReversalAndPalindrome {
             return false;
 
         Stack<Character> stack = new Stack<>();
+
+        for (int i = 0; i < input.length(); i++){
+            stack.push(input.charAt(i));
+        }
     }
 }
