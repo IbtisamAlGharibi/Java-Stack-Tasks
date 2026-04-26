@@ -9,6 +9,14 @@ public class TextEditorWithUndoRedo {
     }
 
     public static void type(String text){
+        Stack<String> undo = new Stack<>();
+        Stack<String> redo = new Stack<>();
+        StringBuilder builder = new StringBuilder();
+        undo.push(text);
+        redo.push(text);
+        builder.append(text);
+
+
 
 
     }
