@@ -12,7 +12,8 @@ public class DecimalToBinaryConverter {
     }
 
     public static Integer decimalToBinary(int decimal){
-
+        Stack<Integer> stack = new Stack<>();
+        String binary = "";
 
     }
 
