@@ -17,5 +17,8 @@ public class HtmlTagValidator {
             System.out.println("Empty string");
                 return false;
 
-    }
+            String[] parts = html.split("<");
+
+
+        }
 }
