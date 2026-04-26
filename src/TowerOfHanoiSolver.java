@@ -20,6 +20,8 @@ public class TowerOfHanoiSolver {
     }
 
     public static void isValidMove(char fromPeg, char toPeg){
+        int disk1 = -1;
+        int disk2 = -1;
 
     }
 }
