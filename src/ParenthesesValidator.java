@@ -24,6 +24,7 @@ public class ParenthesesValidator {
                System.out.println("True");
            }
            return true;
+
         }
         return false;
     }
