@@ -7,4 +7,9 @@ public class TextEditorWithUndoRedo {
         StringBuilder builder = new StringBuilder();
 
     }
+
+    public static void type(String text){
+
+
+    }
 }
