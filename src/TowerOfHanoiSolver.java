@@ -45,6 +45,9 @@ public class TowerOfHanoiSolver {
         if (disk1 == -1) return false;
         if (disk2 == -1) return false;
         return  disk1 < disk2;
+    }
+
+    static void solveHanoi(int n, char from, char to, char aux){
 
 
     }
