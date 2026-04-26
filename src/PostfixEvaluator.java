@@ -9,6 +9,13 @@ public class PostfixEvaluator {
         String str4 = "5 6 + % -";
         String str5 = " / 5 * 7 8 +";
 
+        System.out.println(evaluatePostfix(str1));
+        System.out.println(evaluatePostfix(str2));
+        System.out.println(evaluatePostfix(str3));
+        System.out.println(evaluatePostfix(str4));
+        System.out.println(evaluatePostfix(str5));
+
+
     }
 
     public static Integer evaluatePostfix(String expression){
@@ -32,8 +39,7 @@ public class PostfixEvaluator {
                 else if (token.equals("/")) stack.push(a / b);
                 else if (token.equals("%")) stack.push(a % b);
             }
-
-
         }
+        return stack.pop();
     }
 }
