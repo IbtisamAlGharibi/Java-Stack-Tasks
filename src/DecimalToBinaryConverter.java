@@ -15,6 +15,12 @@ public class DecimalToBinaryConverter {
         Stack<Integer> stack = new Stack<>();
         String binary = "";
 
+        while (decimal > 0){
+            stack.push(decimal % 2);
+            decimal = decimal / 2;
+        }
+
+
     }
 
 }
