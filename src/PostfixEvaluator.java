@@ -21,6 +21,16 @@ public class PostfixEvaluator {
 
             if (Character.isDigit(token.charAt(0))) {
                 stack.push(Integer.parseInt(token));
+            }else {
+
+                int b = stack.pop();
+                int a = stack.pop();
+
+                if (token.equals("+")) stack.push(a + b);
+                else if (token.equals("-")) stack.push(a - b);
+                else if (token.equals("*")) stack.push(a * b);
+                else if (token.equals("/")) stack.push(a / b);
+                else if (token.equals("%")) stack.push(a % b);
             }
 
 
