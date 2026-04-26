@@ -10,4 +10,9 @@ public class PostfixEvaluator {
         String str5 = " / 5 * 7 8 +";
 
     }
+
+    public static Integer evaluatePostfix(String expression){
+
+
+    }
 }
