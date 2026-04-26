@@ -18,5 +18,13 @@ public class TextEditorWithUndoRedo {
         System.out.println(undo);
         System.out.println(redo);
 
+        if (undo.isEmpty()){
+            System.out.println("nothing to undo");
+        }else {
+            System.out.println(undo);
+        }
+
+
+
     }
 }
