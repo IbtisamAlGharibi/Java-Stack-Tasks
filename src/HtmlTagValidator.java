@@ -36,6 +36,15 @@ public class HtmlTagValidator {
                         System.out.println("No opening tag for " + name);
                         return false;
                     }
+                    String top = stack.pop();
+
+                    System.out.println("Closing: " + name + " | Stack: " + stack);
+
+                    if (!top.equals(name)){
+                        System.out.println("Mismatch " + top + " and " + name);
+                        return false;
+                    }
+                }
 
             }
         }
