@@ -31,6 +31,6 @@ public class StringReversalAndPalindrome {
         if (input == null)
             return false;
 
-
+        Stack<Character> stack = new Stack<>();
     }
 }
