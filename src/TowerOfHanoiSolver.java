@@ -6,7 +6,11 @@ public class TowerOfHanoiSolver {
     static Stack<String> C = new Stack<>();
     static int count =0;
     public static void main(String[] args){
-
+            int n =4;
+            initializePegs(n);
+            displayPegs();
+            solveHanoi(n, 'A','C', 'B');
+            System.out.println("Total moves" + count);
     }
 
     public static void initializePegs(int numDisks){
@@ -34,6 +38,7 @@ public class TowerOfHanoiSolver {
                 B.push(String.valueOf(disk));
 
             }
+            count++;
         }
 
 
@@ -71,8 +76,11 @@ public class TowerOfHanoiSolver {
         if (n == 1){
             moveDisk(from,to);
             return;
-
         }
+        solveHanoi(n-1,from, aux, to);
+        moveDisk(from,to);
+        displayPegs();
+        solveHanoi(n-1, aux, to, from);
 
     }
 
