@@ -16,6 +16,16 @@ public class TowerOfHanoiSolver {
     }
 
     public static void moveDisk(char fromPeg, char toPeg){
+        if (isValidMove(fromPeg,toPeg)){
+            Integer disk = -1;
+            if ( fromPeg == 'A' && !A.isEmpty()){
+                disk = Integer.valueOf(A.pop());
+            }else if (fromPeg == 'B' && !B.isEmpty()){
+                disk = Integer.parseInt(B.pop());
+
+            } else if (fromPeg == 'C' && !C.isEmpty()) {
+                disk = Integer.parseInt(C.pop());
+        }
 
     }
 
