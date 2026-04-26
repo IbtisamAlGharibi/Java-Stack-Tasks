@@ -19,7 +19,7 @@ public class TowerOfHanoiSolver {
 
     }
 
-    public static void isValidMove(char fromPeg, char toPeg){
+    public static boolean isValidMove(char fromPeg, char toPeg){
         int disk1 = -1;
         int disk2 = -1;
 
@@ -42,5 +42,10 @@ public class TowerOfHanoiSolver {
         } else if (toPeg == 'C' && !C.isEmpty()) {
             disk2 = Integer.parseInt(C.peek());
         }
+        if (disk1 == -1) return false;
+        if (disk2 == -1) return false;
+        return  disk1 < disk2;
+
+
     }
 }
