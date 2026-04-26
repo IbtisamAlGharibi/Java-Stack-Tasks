@@ -55,4 +55,10 @@ public class TowerOfHanoiSolver {
         }
 
     }
+
+    public static void displayPegs(){
+        System.out.println("A" + A);
+        System.out.println("B" + B);
+        System.out.println("C" + C);
+    }
 }
