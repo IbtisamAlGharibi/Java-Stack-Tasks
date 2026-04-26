@@ -15,9 +15,8 @@ public class TextEditorWithUndoRedo {
         undo.push(text);
         redo.push(text);
         builder.append(text);
-
-
-
+        System.out.println(undo);
+        System.out.println(redo);
 
     }
 }
