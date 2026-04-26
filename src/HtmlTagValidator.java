@@ -29,6 +29,14 @@ public class HtmlTagValidator {
                     continue;
 
                 }
+                if (tag.startsWith("/")){
+                    String name = tag.substring(1);
+
+                    if (stack.isEmpty()){
+                        System.out.println("No opening tag for " + name);
+                        return false;
+                    }
+
             }
         }
     }
