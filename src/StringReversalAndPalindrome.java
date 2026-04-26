@@ -9,7 +9,10 @@ public class StringReversalAndPalindrome {
         String str4 = "sister";
         String str5 = "aunt";
 
-
+    }
+    public static String  reverseString(String input){
+        if (input == null)
+            return null;
 
     }
 }
