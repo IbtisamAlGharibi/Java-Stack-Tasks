@@ -12,7 +12,9 @@ public class TowerOfHanoiSolver {
         for (int i = numDisks; i>=1; i--){
             A.push(String.valueOf(i));
         }
+    }
 
+    public static void moveDisk(char fromPeg, char toPeg){
 
     }
 }
