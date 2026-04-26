@@ -17,6 +17,8 @@ public class PostfixEvaluator {
         String[] tokens = expression.split(" ");
 
         for (int i = 0; i < tokens.length; i++){
+            String token = tokens[i];
+
 
             }
     }
