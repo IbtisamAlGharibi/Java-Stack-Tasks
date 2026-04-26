@@ -9,6 +9,9 @@ public class TowerOfHanoiSolver {
     }
 
     public static void initializePegs(int numDisks){
+        for (int i = numDisks; i>=1; i--){
+            A.push(String.valueOf(i));
+        }
 
 
     }
