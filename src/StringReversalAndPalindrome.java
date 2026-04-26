@@ -26,4 +26,9 @@ public class StringReversalAndPalindrome {
         }
         return reversed;
     }
+
+    public static boolean isPalindrome(String input){
+
+
+    }
 }
