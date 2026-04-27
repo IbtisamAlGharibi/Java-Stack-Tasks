@@ -11,6 +11,15 @@ public class NextGreaterElementFinder {
         int[] arr5 ={2,8,9,3};
         int[] arr6 = {4,8,6,0};
 
+        findNextGreaterElement(arr1);
+        findNextGreaterElement(arr2);
+        findNextGreaterElement(arr3);
+        findNextGreaterElement(arr4);
+        findNextGreaterElement(arr5);
+        findNextGreaterElement(arr6);
+        findNextGreaterElementCircular(arr5);
+        findNextSmallerElement(arr5);
+
     }
     public static void findNextGreaterElement(int[] arr){
         if (arr == null || arr.length == 0)
@@ -34,6 +43,7 @@ public class NextGreaterElementFinder {
 
             System.out.println("Stack:" + arrays);
         }
+        displayResults(arr, result);
 
     }
 
@@ -55,6 +65,7 @@ public class NextGreaterElementFinder {
                 arrays.push(index);
             }
         }
+        displayResults(arr, result);
 
     }
 
@@ -72,11 +83,14 @@ public class NextGreaterElementFinder {
             }
             arrays.push(i);
         }
+        displayResults(arr, result);
 
     }
     public static void displayResults(int[] arr, int[] result){
-
-
+        System.out.println("Index | Value | Next");
+        for (int i = 0; i < arr.length; i++){
+            System.out.println(i + "     | " + arr[i] + "     | " + result[i]);
+        }
     }
 
 }
