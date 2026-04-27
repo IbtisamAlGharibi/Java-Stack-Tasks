@@ -30,6 +30,11 @@ public class NextGreaterElementFinder {
                 result[index] = arr[i];
             }
 
+            arrays.push(i);
+
+            System.out.println("Stack:" + arrays);
+        }
+
         }
     }
 }
