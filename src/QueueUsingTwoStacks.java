@@ -5,6 +5,18 @@ public class QueueUsingTwoStacks {
     static Stack<String > outputStack = new Stack<>();
     public static void main(String[] args){
 
+        enqueue("A");
+        enqueue("B");
+        enqueue("C");
+        enqueue("D");
+        enqueue("E");
+        dequeue();
+        dequeue();
+        peek();
+        dequeue();
+        dequeue();
+        enqueue("H");
+        isEmpty();
 
 
         System.out.println("input stack");
@@ -36,10 +48,14 @@ public class QueueUsingTwoStacks {
     public static void  peek(){
         String frontElement = outputStack.peek();
         System.out.println(frontElement);
+        System.out.println(outputStack);
+        System.out.println(inputStack);
+
     }
 
     public static boolean isEmpty(){
         return inputStack.isEmpty() && outputStack.isEmpty();
+
     }
 
     public static int Size(){
