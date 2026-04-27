@@ -66,6 +66,12 @@ public class NextGreaterElementFinder {
         for (int i = 0; i < n; i++){
             result[i] = -1;
         }
+        for (int i = 0; i < n; i++){
+            while (!arrays.isEmpty() && arr[arrays.peek()] > arr[i]){
+                result[arrays.pop()] = arr[i];
+            }
+            arrays.push(i);
+        }
 
     }
 
