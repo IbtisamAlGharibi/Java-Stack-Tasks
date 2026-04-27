@@ -11,6 +11,10 @@ public class QueueUsingTwoStacks {
         for (int i =0; i<inputStack.size();i++){
             System.out.println(inputStack.get(i));
         }
+        System.out.println("output stack");
+        for (int i =0; i<outputStack.size();i++){
+            System.out.println(outputStack.get(i));
+        }
 
     }
 
