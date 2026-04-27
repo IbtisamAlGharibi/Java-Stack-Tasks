@@ -54,6 +54,10 @@ public class InfixToPostfixConverter {
             if (Character.isDigit(token.charAt(0))) {
                 int num = Integer.parseInt(token);
                 stack.push(num);
-            }
+            }else {
+                if (stack.size() < 2) {
+                    System.out.println("not enough operands");
+                    return 0;
+                }
         }
     }
