@@ -47,6 +47,10 @@ public class InfixToPostfixConverter {
             return 0;
         String[] tokens = postfix.split(" ");
 
+        Stack<Integer> stack = new Stack<>();
+        for (int i = 0; i < tokens.length; i++) {
+            String token = tokens[i];
+
 
     }
 }
