@@ -13,6 +13,10 @@ public class StackSorter {
         System.out.println("Before sorting:");
         displayStack(original, "Original");
 
+        sortStack(original);
+
+        System.out.println("After sortStack:");
+        displayStack(original, "Original");
 
     }
 
