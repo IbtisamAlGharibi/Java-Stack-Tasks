@@ -35,11 +35,15 @@ public class InfixToPostfixConverter {
                     output.append(ops.pop());
                 }
                 ops.push(ch);
-        }
+            }
             while (!ops.isEmpty()) {
                 output.append(ops.pop());
             }
-
+        }
     }
 
+    public static void evaluatePostfix(String postfix){
+
+
+    }
 }
