@@ -22,6 +22,14 @@ public class NextGreaterElementFinder {
             result[i] = -1;
         }
 
+        for (int i = 0; i < n; i++){
+            System.out.println("Processing:" + arr[i]);
 
+            while (!arrays.isEmpty() && arr[arrays.peek()] < arr[i]){
+                int index = arrays.pop();
+                result[index] = arr[i];
+            }
+
+        }
     }
 }
