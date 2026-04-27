@@ -16,6 +16,7 @@ public class MinStack {
     }
 
     public static void pop(){
+        int fromMain = mainStack.pop();
 
     }
 }
