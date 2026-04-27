@@ -42,7 +42,10 @@ public class InfixToPostfixConverter {
         }
     }
 
-    public static void evaluatePostfix(String postfix){
+    public static int evaluatePostfix(String postfix){
+        if (postfix == null || postfix.isEmpty())
+            return 0;
+        String[] tokens = postfix.split(" ");
 
 
     }
