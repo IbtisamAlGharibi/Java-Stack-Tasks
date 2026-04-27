@@ -36,4 +36,8 @@ public class BrowserNavigationSystem {
     public static void showCurrentPage(){
         System.out.println("Current Page:" + " "+ currentPage);
     }
+
+    public static void showHistory(){
+
+    }
 }
