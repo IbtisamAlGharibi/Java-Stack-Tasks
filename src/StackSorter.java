@@ -18,6 +18,11 @@ public class StackSorter {
         System.out.println("After sortStack:");
         displayStack(original, "Original");
 
+        sortStackRecursive(original);
+        System.out.println("After sortStackRecursive:");
+        displayStack(original, "Original");
+
+
     }
 
     public static void sortStack(Stack<Integer> stack){
