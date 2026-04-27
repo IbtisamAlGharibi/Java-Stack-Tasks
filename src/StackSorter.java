@@ -22,6 +22,11 @@ public class StackSorter {
         System.out.println("After sortStackRecursive:");
         displayStack(original, "Original");
 
+        insertInSortedOrder(original, 3);
+
+        System.out.println("After insertInSortedOrder");
+        displayStack(original, "Original");
+
 
     }
 
