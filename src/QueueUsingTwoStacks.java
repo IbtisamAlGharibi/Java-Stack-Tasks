@@ -15,8 +15,12 @@ public class QueueUsingTwoStacks {
         if (outputStack.isEmpty()){
             outputStack.push(inputStack.pop());
             String frontElement = outputStack.pop();
+            System.out.println(frontElement);
         }
+        System.out.println(outputStack);
+        System.out.println(inputStack);
 
-        }
     }
+
 }
+
