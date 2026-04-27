@@ -10,6 +10,9 @@ public class StackSorter {
         original.push(4);
         original.push(2);
 
+        System.out.println("Before sorting:");
+        displayStack(original, "Original");
+
 
     }
 
