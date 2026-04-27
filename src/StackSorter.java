@@ -24,6 +24,8 @@ public class StackSorter {
     }
 
     public static void sortStackRecursive(Stack<Integer> stack){
-
+        while (!stack.isEmpty()) {
+            int temp = stack.pop();
+        }
     }
 }
