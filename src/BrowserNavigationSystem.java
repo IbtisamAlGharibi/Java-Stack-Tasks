@@ -32,4 +32,8 @@ public class BrowserNavigationSystem {
             currentPage = forwardStack.pop();
         }
     }
+
+    public static void showCurrentPage(){
+
+    }
 }
