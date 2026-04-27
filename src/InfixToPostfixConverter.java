@@ -58,6 +58,11 @@ public class InfixToPostfixConverter {
                 if (stack.size() < 2) {
                     System.out.println("not enough operands");
                     return 0;
-                }
+                } }
+
+            int b = stack.pop();
+            int a = stack.pop();
+            int result = 0;
         }
     }
+}
