@@ -12,6 +12,12 @@ public class InfixToPostfixConverter {
 
         for (int i =0; i< infix.length(); i++){
             char ch = infix.charAt(i);
+
+            if (Character.isDigit(ch)) {
+                output.append(ch);
+            }
         }
+
+
     }
 }
