@@ -42,7 +42,10 @@ public class StackSorter {
         while (!stack.isEmpty() && stack.peek() > value) {
             temporary.push(stack.pop());
         }
+        stack.push(value);
 
-
+        while (!temporary.isEmpty()) {
+            stack.push(temporary.pop());
+        }
     }
 }
