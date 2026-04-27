@@ -12,4 +12,8 @@ public class NextGreaterElementFinder {
         int[] arr6 = {4,8,6,0};
 
     }
+    public static void findNextGreaterElement(int[] arr){
+
+
+    }
 }
