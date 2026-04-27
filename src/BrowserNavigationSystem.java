@@ -11,6 +11,8 @@ public class BrowserNavigationSystem {
     public static String visitPage(String url){
         if (!(currentPage == null)){
             backStack.push(currentPage);
+            forwardStack.clear();
+            currentPage = url;
 
         }
 
