@@ -7,6 +7,7 @@ public class InfixToPostfixConverter {
     }
 
     public static void infixToPostfix(String infix){
-
+        Stack<Character> ops = new Stack<>();
+        StringBuilder output = new StringBuilder();
     }
 }
