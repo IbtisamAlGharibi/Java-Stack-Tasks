@@ -63,6 +63,28 @@ public class InfixToPostfixConverter {
             int b = stack.pop();
             int a = stack.pop();
             int result = 0;
+
+            if (token.equals("+")) {
+                result = a + b;
+            } else if (token.equals("-")) {
+                result = a - b;
+            } else if (token.equals("*")) {
+                result = a * b;
+            } else if (token.equals("/")) {
+                if (b == 0) {
+                    System.out.println(" division by zero");
+                    return 0;
+                }
+                result = a / b;
+            } else if (token.equals("%")) {
+                result = a % b;
+            } else {
+                System.out.println("invalid operator");
+                return 0;
+            }
+
+            stack.push(result);
         }
     }
+
 }
