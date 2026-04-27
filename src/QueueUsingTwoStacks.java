@@ -10,4 +10,7 @@ public class QueueUsingTwoStacks {
     public static void enqueue(String element){
         inputStack.push(element);
     }
+    public static void dequeue(){
+
+    }
 }
