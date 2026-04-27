@@ -37,4 +37,9 @@ public class StackSorter {
             stack.push(temporary.pop());
         }
     }
+
+    public static void insertInSortedOrder(Stack<Integer> stack, int value){
+
+
+    }
 }
