@@ -22,5 +22,10 @@ public class QueueUsingTwoStacks {
 
     }
 
+    public static void  peek(){
+        String frontElement = outputStack.peek();
+        System.out.println(frontElement);
+    }
+
 }
 
