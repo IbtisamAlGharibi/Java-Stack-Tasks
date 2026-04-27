@@ -21,4 +21,10 @@ public class MinStack {
             minStack.pop();
         }
     }
+
+    public static Integer getMin(){
+        return minStack.peek();
+    }
+
+
 }
