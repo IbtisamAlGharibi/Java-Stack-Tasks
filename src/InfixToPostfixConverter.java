@@ -9,5 +9,9 @@ public class InfixToPostfixConverter {
     public static void infixToPostfix(String infix){
         Stack<Character> ops = new Stack<>();
         StringBuilder output = new StringBuilder();
+
+        for (int i =0; i< infix.length(); i++){
+            char ch = infix.charAt(i);
+        }
     }
 }
