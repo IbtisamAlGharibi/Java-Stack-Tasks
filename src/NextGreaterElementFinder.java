@@ -74,6 +74,10 @@ public class NextGreaterElementFinder {
         }
 
     }
+    public static void displayResults(int[] arr, int[] result){
+
+
+    }
 
 }
 
