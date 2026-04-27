@@ -6,6 +6,22 @@ public class BrowserNavigationSystem {
     static String currentPage = "";
     public static void main( String[] args){
 
+        visitPage("google.com");
+        showCurrentPage();
+        visitPage("youtube.com");
+        showCurrentPage();
+        visitPage("github.com");
+        showCurrentPage();
+        goBack();
+        goBack();
+        goForward();
+        visitPage("stackoverflow.com");
+        showCurrentPage();
+        goBack();
+
+        System.out.println("History:");
+        showHistory();
+
     }
 
     public static String visitPage(String url){
