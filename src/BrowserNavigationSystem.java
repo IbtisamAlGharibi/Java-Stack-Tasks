@@ -8,13 +8,17 @@ public class BrowserNavigationSystem {
 
         visitPage("google.com");
         showCurrentPage();
+
         visitPage("youtube.com");
         showCurrentPage();
+
         visitPage("github.com");
         showCurrentPage();
+
         goBack();
         goBack();
         goForward();
+
         visitPage("stackoverflow.com");
         showCurrentPage();
         goBack();
