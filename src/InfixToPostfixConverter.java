@@ -42,7 +42,7 @@ public class InfixToPostfixConverter {
         }
     }
 
-    public static int evaluatePostfix(String postfix){
+    public static int evaluatePostfix(String postfix) {
         if (postfix == null || postfix.isEmpty())
             return 0;
         String[] tokens = postfix.split(" ");
@@ -51,6 +51,9 @@ public class InfixToPostfixConverter {
         for (int i = 0; i < tokens.length; i++) {
             String token = tokens[i];
 
-
+            if (Character.isDigit(token.charAt(0))) {
+                int num = Integer.parseInt(token);
+                stack.push(num);
+            }
+        }
     }
-}
