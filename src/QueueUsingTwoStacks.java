@@ -5,6 +5,13 @@ public class QueueUsingTwoStacks {
     static Stack<String > outputStack = new Stack<>();
     public static void main(String[] args){
 
+
+
+        System.out.println("input stack");
+        for (int i =0; i<inputStack.size();i++){
+            System.out.println(inputStack.get(i));
+        }
+
     }
 
     public static void enqueue(String element){
