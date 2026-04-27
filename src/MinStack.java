@@ -10,6 +10,10 @@ public class MinStack {
         push(3);
         push(4);
 
+        pop();
+        pop();
+
+
     }
 
     public static void push(int value){
