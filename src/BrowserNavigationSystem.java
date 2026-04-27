@@ -18,7 +18,10 @@ public class BrowserNavigationSystem {
     }
 
     public static void goBack(){
-
+        if (backStack.isEmpty()){
+            System.out.println("cannot go back");
+            forwardStack.push(currentPage);
+        }
 
     }
 }
