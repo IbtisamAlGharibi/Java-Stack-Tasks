@@ -7,4 +7,9 @@ public class BrowserNavigationSystem {
     public static void main( String[] args){
 
     }
+
+    public static String visitPage(String url){
+
+
+    }
 }
