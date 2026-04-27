@@ -50,6 +50,7 @@ public class StackSorter {
     }
 
     public static void displayStack(Stack<Integer> stack, String name){
-
+        System.out.println("Original stack:" + original);
+        System.out.println("Temporary stack:" + temporary);
     }
 }
