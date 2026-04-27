@@ -41,5 +41,9 @@ public class BrowserNavigationSystem {
         for (int i = 0; i<backStack.size(); i++){
             System.out.println(backStack.get(i));
         }
+
+        for (int i = 0; i<forwardStack.size(); i++){
+            System.out.println(forwardStack.get(i));
+        }
     }
 }
