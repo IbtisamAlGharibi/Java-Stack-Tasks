@@ -35,6 +35,12 @@ public class NextGreaterElementFinder {
             System.out.println("Stack:" + arrays);
         }
 
-        }
     }
+
+    public static void findNextGreaterElementCircular(int[] arr){
+
+
+    }
+
 }
+
