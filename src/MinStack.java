@@ -13,6 +13,9 @@ public class MinStack {
         if (minStack.isEmpty() ||  value <= minStack.peek()){
             minStack.push(value);
         }
+    }
+
+    public static void pop(){
 
     }
 }
