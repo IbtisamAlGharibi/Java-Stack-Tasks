@@ -15,6 +15,13 @@ public class InfixToPostfixConverter {
 
             if (Character.isDigit(ch)) {
                 output.append(ch);
+            }else if (ch == '(') {
+                ops.push(ch);
+            }else if (ch == ')') {
+                while (!ops.isEmpty() && ops.peek() != '(') {
+                    output.append(ops.pop());
+                }
+                ops.pop();
             }
         }
 
