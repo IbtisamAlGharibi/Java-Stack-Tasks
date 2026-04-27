@@ -23,6 +23,9 @@ public class BrowserNavigationSystem {
             forwardStack.push(currentPage);
             currentPage = forwardStack.pop();
         }
+    }
+
+    public static void goForward(){
 
     }
 }
