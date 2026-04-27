@@ -13,7 +13,8 @@ public class NextGreaterElementFinder {
 
     }
     public static void findNextGreaterElement(int[] arr){
-
+        if (arr == null || arr.length == 0)
+            return;
 
     }
 }
