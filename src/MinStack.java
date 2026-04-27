@@ -17,6 +17,8 @@ public class MinStack {
 
     public static void pop(){
         int fromMain = mainStack.pop();
-
+        if (fromMain == minStack.peek()){
+            minStack.pop();
+        }
     }
 }
