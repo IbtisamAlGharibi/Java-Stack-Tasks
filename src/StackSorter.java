@@ -48,4 +48,8 @@ public class StackSorter {
             stack.push(temporary.pop());
         }
     }
+
+    public static void displayStack(Stack<Integer> stack, String name){
+
+    }
 }
