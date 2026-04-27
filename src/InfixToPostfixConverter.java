@@ -36,6 +36,9 @@ public class InfixToPostfixConverter {
                 }
                 ops.push(ch);
         }
+            while (!ops.isEmpty()) {
+                output.append(ops.pop());
+            }
 
     }
 
