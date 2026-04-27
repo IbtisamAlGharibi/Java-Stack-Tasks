@@ -38,6 +38,8 @@ public class BrowserNavigationSystem {
     }
 
     public static void showHistory(){
-
+        for (int i = 0; i<backStack.size(); i++){
+            System.out.println(backStack.get(i));
+        }
     }
 }
