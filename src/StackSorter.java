@@ -8,6 +8,12 @@ public class StackSorter {
     }
 
     public static void sortStack(Stack<Integer> stack){
+        for (int i =0; i < stack.size();i++) {
+            if (!original.isEmpty()) {
+                int temp = original.pop();
+                System.out.println(temp);
+            }
 
+        }
     }
 }
