@@ -5,6 +5,12 @@ public class StackSorter {
     static Stack<Integer> temporary = new Stack<>();
     public static void main(String[] args){
 
+        original.push(5);
+        original.push(1);
+        original.push(4);
+        original.push(2);
+
+
     }
 
     public static void sortStack(Stack<Integer> stack){
