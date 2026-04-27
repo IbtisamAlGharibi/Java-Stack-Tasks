@@ -30,7 +30,11 @@ public class StackSorter {
             while (!temporary.isEmpty() && temporary.peek() > temp) {
                 stack.push(temporary.pop());
             }
+            temporary.push(temp);
+        }
 
+        while (!temporary.isEmpty()) {
+            stack.push(temporary.pop());
         }
     }
 }
