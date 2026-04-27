@@ -10,7 +10,13 @@ public class QueueUsingTwoStacks {
     public static void enqueue(String element){
         inputStack.push(element);
     }
-    public static void dequeue(){
 
+    public static void dequeue(){
+        if (outputStack.isEmpty()){
+            outputStack.push(inputStack.pop());
+            String frontElement = outputStack.pop();
+        }
+
+        }
     }
 }
