@@ -19,5 +19,7 @@ public class StackSorter {
                 temporary.push(temp);
             }
         }
+        System.out.println(original);
+        System.out.println(temporary);
     }
 }
