@@ -27,5 +27,10 @@ public class QueueUsingTwoStacks {
         System.out.println(frontElement);
     }
 
+    public static boolean isEmpty(){
+        return inputStack.isEmpty() && outputStack.isEmpty();
+    }
+
+
 }
 
