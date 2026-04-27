@@ -91,8 +91,7 @@ public class InfixToPostfixConverter {
     }
 
     public static void getPrecedence(char operator){
-
-
+                precedence(operator);
     }
 
 }
