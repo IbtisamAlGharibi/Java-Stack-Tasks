@@ -6,6 +6,13 @@ public class InfixToPostfixConverter {
 
     }
 
+    public static int precedence(char op){
+        if (op == '^') return 1;
+        if (op == '*' || op == '/' || op =='%') return 2;
+        if (op == '+' || op == '-') return 3;
+        return 0;
+    }
+
     public static void infixToPostfix(String infix){
         Stack<Character> ops = new Stack<>();
         StringBuilder output = new StringBuilder();
@@ -22,9 +29,14 @@ public class InfixToPostfixConverter {
                     output.append(ops.pop());
                 }
                 ops.pop();
-            }
+            }else {
+                while (!ops.isEmpty() && ops.peek() != '(' &&
+                        precedence(ops.peek()) >= precedence(ch)) {
+                    output.append(ops.pop());
+                }
+                ops.push(ch);
         }
 
-
     }
+
 }
