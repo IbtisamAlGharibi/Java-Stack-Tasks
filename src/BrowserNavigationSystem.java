@@ -13,8 +13,12 @@ public class BrowserNavigationSystem {
             backStack.push(currentPage);
             forwardStack.clear();
             currentPage = url;
-
         }
+        return currentPage;
+    }
+
+    public static void goBack(){
+
 
     }
 }
