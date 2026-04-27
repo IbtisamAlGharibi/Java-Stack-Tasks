@@ -39,6 +39,9 @@ public class StackSorter {
     }
 
     public static void insertInSortedOrder(Stack<Integer> stack, int value){
+        while (!stack.isEmpty() && stack.peek() > value) {
+            temporary.push(stack.pop());
+        }
 
 
     }
