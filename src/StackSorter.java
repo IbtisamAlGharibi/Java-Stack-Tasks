@@ -12,8 +12,12 @@ public class StackSorter {
             if (!original.isEmpty()) {
                 int temp = original.pop();
                 System.out.println(temp);
-            }
 
+                while (!temporary.isEmpty() && temporary.peek() > temp){
+                    original.push(temporary.pop());
+                }
+                temporary.push(temp);
+            }
         }
     }
 }
