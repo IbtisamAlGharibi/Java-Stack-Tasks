@@ -90,4 +90,9 @@ public class InfixToPostfixConverter {
         return stack.pop();
     }
 
+    public static void getPrecedence(char operator){
+
+
+    }
+
 }
