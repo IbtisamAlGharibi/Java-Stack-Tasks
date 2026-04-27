@@ -16,5 +16,12 @@ public class NextGreaterElementFinder {
         if (arr == null || arr.length == 0)
             return;
 
+        int n = arr.length;
+        int[] result = new int[n];
+        for (int i = 0; i < n; i++){
+            result[i] = -1;
+        }
+
+
     }
 }
