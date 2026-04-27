@@ -29,6 +29,7 @@ public class BrowserNavigationSystem {
         if (forwardStack.isEmpty()){
             System.out.println("cannot go forward");
             backStack.push(currentPage);
+            currentPage = forwardStack.pop();
         }
     }
 }
