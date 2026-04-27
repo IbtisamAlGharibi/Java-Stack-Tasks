@@ -22,4 +22,8 @@ public class StackSorter {
         System.out.println(original);
         System.out.println(temporary);
     }
+
+    public static void sortStackRecursive(Stack<Integer> stack){
+
+    }
 }
