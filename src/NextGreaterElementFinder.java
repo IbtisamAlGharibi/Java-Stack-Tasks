@@ -17,7 +17,9 @@ public class NextGreaterElementFinder {
         findNextGreaterElement(arr4);
         findNextGreaterElement(arr5);
         findNextGreaterElement(arr6);
+
         findNextGreaterElementCircular(arr5);
+
         findNextSmallerElement(arr5);
 
     }
