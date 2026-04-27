@@ -10,9 +10,12 @@ public class QueueUsingTwoStacks {
         enqueue("C");
         enqueue("D");
         enqueue("E");
+
         dequeue();
         dequeue();
+
         peek();
+
         dequeue();
         dequeue();
         enqueue("H");
