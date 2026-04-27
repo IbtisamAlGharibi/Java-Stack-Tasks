@@ -28,6 +28,8 @@ public class StackSorter {
         displayStack(original, "Original");
 
 
+
+
     }
 
     public static void sortStack(Stack<Integer> stack){
