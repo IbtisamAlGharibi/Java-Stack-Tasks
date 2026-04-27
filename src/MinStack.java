@@ -13,6 +13,9 @@ public class MinStack {
         pop();
         pop();
 
+        getMin();
+        display();
+
 
     }
 
