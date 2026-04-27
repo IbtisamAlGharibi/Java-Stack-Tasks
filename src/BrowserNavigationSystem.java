@@ -23,6 +23,9 @@ public class BrowserNavigationSystem {
             forwardStack.push(currentPage);
             currentPage = forwardStack.pop();
         }
+        System.out.println("Current page " + currentPage);
+        System.out.println("back stack" + backStack);
+        System.out.println("forward stack" + forwardStack);
     }
 
     public static void goForward(){
@@ -31,6 +34,10 @@ public class BrowserNavigationSystem {
             backStack.push(currentPage);
             currentPage = forwardStack.pop();
         }
+        System.out.println("Current page " + currentPage);
+        System.out.println("back stack" + backStack);
+        System.out.println("forward stack" + forwardStack);
+
     }
 
     public static void showCurrentPage(){
