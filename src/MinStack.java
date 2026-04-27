@@ -17,6 +17,8 @@ public class MinStack {
         display();
 
 
+
+
     }
 
     public static void push(int value){
