@@ -68,5 +68,10 @@ public class InfixExpressionEvaluator {
         if (!number.isEmpty()) {
             operandStack.push(Double.parseDouble(number));
         }
+        while (!operatorStack.isEmpty()) {
+            double b = operandStack.pop();
+            double a = operandStack.pop();
+            char op = operatorStack.pop();
+        }
     }
 }
