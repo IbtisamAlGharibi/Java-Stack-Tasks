@@ -19,6 +19,10 @@ public class InfixExpressionEvaluator {
         for (int i = 0; i < expression.length(); i++) {
             char ch = expression.charAt(i);
 
+            if (Character.isDigit(ch) || ch == '.') {
+                number += ch;
+            }
+
         }
 
     }
