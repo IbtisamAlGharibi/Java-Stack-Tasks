@@ -15,6 +15,7 @@ public class InfixExpressionEvaluator {
     }
 
     public static void evaluate(String expression){
+        String number = "";
 
     }
 }
