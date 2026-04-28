@@ -30,8 +30,15 @@ public class InfixExpressionEvaluator {
                 if (ch == '(') {
                     operatorStack.push(ch);
                 }
+                else if (ch == ')') {
+                    while (operatorStack.peek() != '(') {
+                        double b = operandStack.pop();
+                        double a = operandStack.pop();
+                        char op = operatorStack.pop();
 
+                    }
 
+                }
             }
         }
     }
