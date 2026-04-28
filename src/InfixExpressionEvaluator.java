@@ -4,6 +4,8 @@ public class InfixExpressionEvaluator {
     static Stack<Double> operandStack = new Stack<Double>();
     static  Stack<Character> operatorStack = new Stack<>();
 
+
+
     public static void main(String[] args){
         String expression1 = "3+5*(2-1)";
         String expression2 = "10+2*6";
