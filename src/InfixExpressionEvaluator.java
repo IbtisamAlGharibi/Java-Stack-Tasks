@@ -21,7 +21,12 @@ public class InfixExpressionEvaluator {
 
             if (Character.isDigit(ch) || ch == '.') {
                 number += ch;
-            }
+            }else {
+
+                if (!number.isEmpty()) {
+                    operandStack.push(Double.parseDouble(number));
+                    number = "";
+                }
 
         }
 
