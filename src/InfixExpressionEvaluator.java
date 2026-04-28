@@ -49,6 +49,16 @@ public class InfixExpressionEvaluator {
                     while (!operatorStack.isEmpty() &&
                             operatorStack.peek() != '(' &&
                             precedence(operatorStack.peek()) <= precedence(ch)) {
+                        double b = operandStack.pop();
+                        double a = operandStack.pop();
+                        char op = operatorStack.pop();
+
+                        if (op == '+') operandStack.push(a + b);
+                        if (op == '-') operandStack.push(a - b);
+                        if (op == '*') operandStack.push(a * b);
+                        if (op == '/') operandStack.push(a / b);
+                        if (op == '%') operandStack.push(a % b);
+                        if (op == '^') operandStack.push(Math.pow(a, b));
 
                     }
 
