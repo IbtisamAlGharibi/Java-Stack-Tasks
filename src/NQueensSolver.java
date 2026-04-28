@@ -88,4 +88,8 @@ public class NQueensSolver {
         System.out.println();
     }
 
+    public static void displayAllSolutions(int n) {
+        solveNQueens(n);
+    }
+
 }
