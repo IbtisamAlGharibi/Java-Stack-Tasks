@@ -25,4 +25,10 @@ public class NQueensSolver {
         int col = 0;
         int count = 0;
     }
+
+    private static boolean isSafe(Position pos, Stack<Position> queens) {
+
+    }
+
 }
+
