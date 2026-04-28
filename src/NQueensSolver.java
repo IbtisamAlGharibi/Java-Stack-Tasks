@@ -49,8 +49,15 @@ public class NQueensSolver {
                 } else {
                     row++;
                     col = 0;
+                }else {
+                    if (queens.isEmpty()) break;
+
+                    Position last = queens.pop();
+                    row = last.row;
+                    col = last.col + 1;
                 }
             }
+            System.out.println("Total Solutions: " + count);
         }
     }
 
