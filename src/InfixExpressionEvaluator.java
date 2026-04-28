@@ -84,6 +84,19 @@ public class InfixExpressionEvaluator {
     }
 
     public static void applyOperation(double a, double b, char operator){
+        b = operandStack.pop();
+        a = operandStack.pop();
+        operator = operatorStack.pop();
 
+        double result = 0;
+
+        if (operator == '+') result = a + b;
+        if (operator == '-') result = a - b;
+        if (operator == '*') result = a * b;
+        if (operator == '/') result = a / b;
+        if (operator == '%') result = a % b;
+        if (operator == '^') result = Math.pow(a, b);
+
+        operandStack.push(result);
     }
 }
