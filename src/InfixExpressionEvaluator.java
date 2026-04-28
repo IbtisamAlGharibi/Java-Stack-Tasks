@@ -44,6 +44,8 @@ public class InfixExpressionEvaluator {
                         if (op == '^') operandStack.push(Math.pow(a, b));
 
                     }
+                    operatorStack.pop();
+                }else if (ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '%' || ch == '^') {
 
                 }
             }
