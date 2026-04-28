@@ -104,4 +104,8 @@ public class InfixExpressionEvaluator {
         precedence(operator);
     }
 
+    public static boolean isOperator(char ch) {
+        return ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '%' || ch == '^';
+    }
+
 }
