@@ -5,6 +5,20 @@ public class LargestRectangleInHistogram {
 
     public static void main(String[] args){
 
+        int[] h1 = {2,1,5,6,2,3};
+        int[] h2 = {2,4};
+        int[] h3 = {6,2,5,4,5,1,6};
+        int[] h4 = {};
+        int[] h5 = {5};
+
+        int[][] tests = {h1,h2,h3,h4,h5};
+
+        for (int i = 0; i < tests.length; i++) {
+            stack.clear();
+            System.out.println("Test " + (i + 1));
+            int result = findLargestRectangle(tests[i]);
+            System.out.println("Max Area: " + result);
+        }
     }
 
     public static int findLargestRectangle(int[] heights){
