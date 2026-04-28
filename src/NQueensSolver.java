@@ -72,9 +72,20 @@ public class NQueensSolver {
     public static void displayBoard(Stack<Position> queens, int n) {
         char[][] board = new char[n][n];
 
-        for (int i = 0; i < n; i++)
-            for (int j = 0; j < n; j++)
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < n; j++) {
                 board[i][j] = '.';
+            }
+        }
+        for (Position p : queens){
+            board[p.row][p.col] = 'Q';}
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++)
+                System.out.print(board[i][j] + " ");
+            System.out.println();
+        }
+        System.out.println();
     }
 
 }
