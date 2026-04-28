@@ -5,6 +5,18 @@ public class InfixExpressionEvaluator {
     static  Stack<Character> operatorStack = new Stack<>();
 
     public static void main(String[] args){
+        String expression1 = "3+5*(2-1)";
+        String expression2 = "10+2*6";
+        String expression3 = "100*(2+12)/14";
+
+        System.out.println("Expression 1: " + expression1);
+        evaluate(expression1);
+
+        System.out.println("Expression 2: " + expression2);
+        evaluate(expression2);
+
+        System.out.println("Expression 3: " + expression3);
+        evaluate(expression3);
 
     }
     public static int precedence(char op){
@@ -81,6 +93,8 @@ public class InfixExpressionEvaluator {
             if (op == '^') operandStack.push(Math.pow(a, b));
         }
         System.out.println(operandStack.pop());
+        System.out.println(operandStack);
+        System.out.println(operatorStack);
     }
 
     public static void applyOperation(double a, double b, char operator){
@@ -98,6 +112,8 @@ public class InfixExpressionEvaluator {
         if (operator == '^') result = Math.pow(a, b);
 
         operandStack.push(result);
+        System.out.println(operandStack);
+        System.out.println(operatorStack);
     }
 
     public static void  getPrecedence(char operator){
