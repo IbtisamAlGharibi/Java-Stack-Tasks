@@ -38,6 +38,19 @@ public class NQueensSolver {
                     break;
                 }
             }
+            if (found) {
+                if (row == n - 1) {
+                    count++;
+                    System.out.println("Solution " + count);
+
+                    Position last = queens.pop();
+                    row = last.row;
+                    col = last.col + 1;
+                } else {
+                    row++;
+                    col = 0;
+                }
+            }
         }
     }
 
