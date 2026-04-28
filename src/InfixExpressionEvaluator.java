@@ -46,8 +46,13 @@ public class InfixExpressionEvaluator {
                     }
                     operatorStack.pop();
                 }else if (ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '%' || ch == '^') {
+                    while (!operatorStack.isEmpty() &&
+                            operatorStack.peek() != '(' &&
+                            precedence(operatorStack.peek()) <= precedence(ch)) {
 
-                }
+                    }
+
+                    }
             }
         }
     }
