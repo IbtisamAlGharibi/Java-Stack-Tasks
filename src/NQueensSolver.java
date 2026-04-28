@@ -12,7 +12,12 @@ public class NQueensSolver {
     }
 
     public static void main(String[] args){
-        //solveNQueens(4);
+        solveNQueens(4);
+        System.out.println("N=3:");
+        solveNQueens(3);
+
+        System.out.println("N=4:");
+        displayAllSolutions(4);
     }
 
     public static void solveNQueens(int n) {
