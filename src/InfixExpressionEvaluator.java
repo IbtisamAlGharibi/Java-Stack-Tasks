@@ -16,6 +16,10 @@ public class InfixExpressionEvaluator {
 
     public static void evaluate(String expression){
         String number = "";
+        for (int i = 0; i < expression.length(); i++) {
+            char ch = expression.charAt(i);
+
+        }
 
     }
 }
