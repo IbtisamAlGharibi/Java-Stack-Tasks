@@ -27,7 +27,12 @@ public class NQueensSolver {
     }
 
     private static boolean isSafe(Position pos, Stack<Position> queens) {
+        for (Position q : queens) {
+            if (q.col == pos.col) return false;
+            if (Math.abs(q.row - pos.row) == Math.abs(q.col - pos.col)) return false;
+        }
 
+        return true;
     }
 
 }
