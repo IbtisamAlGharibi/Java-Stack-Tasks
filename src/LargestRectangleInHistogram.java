@@ -7,6 +7,8 @@ public class LargestRectangleInHistogram {
 
     }
     public static int findLargestRectangle(int[] heights){
+        if (heights.length == 0)
+            return 0;
 
     }
 }
