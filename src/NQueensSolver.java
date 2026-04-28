@@ -30,7 +30,13 @@ public class NQueensSolver {
             boolean found = false;
             for (; col < n; col++) {
                 Position p = new Position(row, col);
+                if (isSafe(p, queens)) {
+                    queens.push(p);
+                    System.out.println("Push: (" + row + "," + col + ")");
 
+                    found = true;
+                    break;
+                }
             }
         }
     }
