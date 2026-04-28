@@ -1,6 +1,7 @@
 import java.util.Stack;
 
 public class LargestRectangleInHistogram {
+
     static Stack<Integer> stack = new Stack<>();
 
     public static void main(String[] args){
@@ -12,6 +13,7 @@ public class LargestRectangleInHistogram {
         int[] h5 = {5};
 
         int[][] tests = {h1,h2,h3,h4,h5};
+
 
         for (int i = 0; i < tests.length; i++) {
             stack.clear();
