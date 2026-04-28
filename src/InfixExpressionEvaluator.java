@@ -107,5 +107,8 @@ public class InfixExpressionEvaluator {
     public static boolean isOperator(char ch) {
         return ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '%' || ch == '^';
     }
+    public static boolean isNumber(char ch) {
+        return Character.isDigit(ch) || ch == '.';
+    }
 
 }
