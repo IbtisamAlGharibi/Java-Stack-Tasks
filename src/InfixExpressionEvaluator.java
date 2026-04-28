@@ -99,4 +99,9 @@ public class InfixExpressionEvaluator {
 
         operandStack.push(result);
     }
+
+    public static void  getPrecedence(char operator){
+        precedence(operator);
+    }
+
 }
