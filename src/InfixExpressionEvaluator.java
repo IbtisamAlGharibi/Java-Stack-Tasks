@@ -61,9 +61,12 @@ public class InfixExpressionEvaluator {
                         if (op == '^') operandStack.push(Math.pow(a, b));
 
                     }
-
-                    }
+                    operatorStack.push(ch);
+                }
             }
+        }
+        if (!number.isEmpty()) {
+            operandStack.push(Double.parseDouble(number));
         }
     }
 }
