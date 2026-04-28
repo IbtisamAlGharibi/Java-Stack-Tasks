@@ -80,5 +80,10 @@ public class InfixExpressionEvaluator {
             if (op == '%') operandStack.push(a % b);
             if (op == '^') operandStack.push(Math.pow(a, b));
         }
+        System.out.println(operandStack.pop());
+    }
+
+    public static void applyOperation(double a, double b, char operator){
+
     }
 }
